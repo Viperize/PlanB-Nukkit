@@ -1,0 +1,23 @@
+name: PlanB
+main: planb.PlanB
+version: 1.0.0
+api: 1.0.0
+load: POSTWORLD
+author: Gamecrafter
+description: Hackers can't cripple your server anymore!
+website: https://github.com/Viperize/PlanB-Nukkit
+commands:
+ planb:
+  description: Shows all PlanB commands
+  usage: /planb <sub-command> [parameters]
+  permission: planb.command.planb
+  aliases: [pb]
+permissions:
+ planb:
+  default: true
+  children:
+   planb.command:
+    default: true
+    children:
+     planb.command.planb:
+      default: true
